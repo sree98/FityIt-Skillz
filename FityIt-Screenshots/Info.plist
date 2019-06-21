@@ -18,5 +18,16 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location in use for Playing Cash games</string>
+	<key>SAMPLE skillzSDK</key>
+	<dict>
+		<key>environment</key>
+		<string>sandbox</string>
+		<key>gameId</key>
+		<integer>5675</integer>
+		<key>allowExit</key>
+		<false/>
+	</dict>
 </dict>
 </plist>

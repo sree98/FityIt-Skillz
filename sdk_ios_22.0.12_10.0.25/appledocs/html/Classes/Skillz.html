@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Skillz Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SkillzSDK-iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Skillz</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/skillzDelegate">skillzDelegate</option>
+		
+		<option value="//api/name/tournamentIsInProgress">tournamentIsInProgress</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/SDKShortVersion">+ SDKShortVersion</option>
+		
+		<option value="//api/name/currentUserDisplayName">+ currentUserDisplayName</option>
+		
+		<option value="//api/name/getMatchRules">+ getMatchRules</option>
+		
+		<option value="//api/name/getRandomFloat">+ getRandomFloat</option>
+		
+		<option value="//api/name/getRandomNumber">+ getRandomNumber</option>
+		
+		<option value="//api/name/getRandomNumberWithMin:andMax:">+ getRandomNumberWithMin:andMax:</option>
+		
+		<option value="//api/name/isSkillzPresented">+ isSkillzPresented</option>
+		
+		<option value="//api/name/player">+ player</option>
+		
+		<option value="//api/name/showSDKVersionInfo">+ showSDKVersionInfo</option>
+		
+		<option value="//api/name/skillzInstance">+ skillzInstance</option>
+		
+		<option value="//api/name/skillzOrientation">+ skillzOrientation</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addMetadata:forMatchInProgress:">- addMetadata:forMatchInProgress:</option>
+		
+		<option value="//api/name/completeTurnWithGameData:playerScore:playerCurrentTotalScore:opponentCurrentTotalScore:roundOutcome:matchOutcome:withCompletion:">- completeTurnWithGameData:playerScore:playerCurrentTotalScore:opponentCurrentTotalScore:roundOutcome:matchOutcome:withCompletion:</option>
+		
+		<option value="//api/name/displayTournamentResultsWithScore:withCompletion:">- displayTournamentResultsWithScore:withCompletion:</option>
+		
+		<option value="//api/name/displayTournamentResultsWithScore:withMatchId:withCompletion:">- displayTournamentResultsWithScore:withMatchId:withCompletion:</option>
+		
+		<option value="//api/name/finishReviewingCurrentGameState:">- finishReviewingCurrentGameState:</option>
+		
+		<option value="//api/name/gameCanReviewTurn">- gameCanReviewTurn</option>
+		
+		<option value="//api/name/getConnectedPlayerCount">- getConnectedPlayerCount</option>
+		
+		<option value="//api/name/getCurrentOpponentPlayerId">- getCurrentOpponentPlayerId</option>
+		
+		<option value="//api/name/getCurrentPlayerId">- getCurrentPlayerId</option>
+		
+		<option value="//api/name/getMatchInfo">- getMatchInfo</option>
+		
+		<option value="//api/name/getServerTime">- getServerTime</option>
+		
+		<option value="//api/name/getTimeLeftForReconnection:">- getTimeLeftForReconnection:</option>
+		
+		<option value="//api/name/initWithDelegate:">- initWithDelegate:</option>
+		
+		<option value="//api/name/initWithGameId:forDelegate:withEnvironment:">- initWithGameId:forDelegate:withEnvironment:</option>
+		
+		<option value="//api/name/initWithGameId:forDelegate:withEnvironment:allowExit:">- initWithGameId:forDelegate:withEnvironment:allowExit:</option>
+		
+		<option value="//api/name/isMatchCompleted">- isMatchCompleted</option>
+		
+		<option value="//api/name/launchSkillz">- launchSkillz</option>
+		
+		<option value="//api/name/notifyPlayerAbortWithCompletion:">- notifyPlayerAbortWithCompletion:</option>
+		
+		<option value="//api/name/notifyPlayerAbortWithMatchId:WithCompletion:">- notifyPlayerAbortWithMatchId:WithCompletion:</option>
+		
+		<option value="//api/name/sendData:">- sendData:</option>
+		
+		<option value="//api/name/setGameHasBackgroundMusic:">- setGameHasBackgroundMusic:</option>
+		
+		<option value="//api/name/updatePlayersCurrentScore:">- updatePlayersCurrentScore:</option>
+		
+		<option value="//api/name/updatePlayersCurrentScore:withMatchId:">- updatePlayersCurrentScore:withMatchId:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Skillz Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SkillzInstance.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Main interface for the Skillz SDK</p><div class="warning"><p><strong>Warning:</strong> Starting and Ending a Tournament</p>
+
+<p>Note: Use existing methods for ending and beginning a match that are defined in SkillzInstance.h</p>
+
+<p>You should implement <code>tournamentWillBegin:withMatchInfo:</code>, which will be called when a match should begin.
+You can check the supplied SKZMatchInfo&rsquo;s isSynchronous property to determine whether the match is Sync or Async.</p>
+
+<p>For reporting a player&rsquo;s score, you should use <a href="#//api/name/displayTournamentResultsWithScore:withCompletion:"><code>displayTournamentResultsWithScore:withCompletion:</code></a>.</p>
+
+<p>For aborting a <a href="#//api/name/player">player</a>, you should use <a href="#//api/name/notifyPlayerAbortWithCompletion:"><code>notifyPlayerAbortWithCompletion:</code></a></p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Skillz SDK Properties" name="task_Skillz SDK Properties"></a>
+						<h2 class="task-title">Skillz SDK Properties</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/tournamentIsInProgress" title="tournamentIsInProgress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tournamentIsInProgress">&nbsp;&nbsp;tournamentIsInProgress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether or not a Skillz match is currently in progress.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, assign) BOOL tournamentIsInProgress</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/skillzDelegate" title="skillzDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skillzDelegate">&nbsp;&nbsp;skillzDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current <a href="../Protocols/SkillzBaseDelegate.html">SkillzBaseDelegate</a> instance</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, strong) id&lt;SkillzBaseDelegate&gt; skillzDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Skillz SDK Class Methods" name="task_Skillz SDK Class Methods"></a>
+						<h2 class="task-title">Skillz SDK Class Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/skillzInstance" title="skillzInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skillzInstance">+&nbsp;skillzInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get a singleton reference to the Skillz SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (Skillz *_Nonnull)skillzInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The singleton instance of the Skillz SDK object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMatchRules" title="getMatchRules"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMatchRules">+&nbsp;getMatchRules</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a Dictionary of Game Parameters that you set in each tournament in Developer Portal.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDictionary *_Nonnull)getMatchRules</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can set or edit these game parameters by clicking Tournaments > Edit in your Developer Portal (<a href="https://developers.skillz.com/dashboard">https://developers.skillz.com/dashboard)</a>)</p>
+
+<p>You can use these game parameters to provide a different user experience for each tournament that you have.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRandomNumber" title="getRandomNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRandomNumber">+&nbsp;getRandomNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a random integer supplied by the Skillz SDK to ensure fairness across competition games.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSInteger)getRandomNumber</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The range of this function is [0, RAND_MAX) (0 is inclusive, RAND_MAX is exclusive)</p>
+
+<p>On iOS, RAND_MAX is 2,147,483,647</p>
+
+<p>Players in the same tournament will receive the same sequence of random numbers.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRandomFloat" title="getRandomFloat"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRandomFloat">+&nbsp;getRandomFloat</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a random floating point value supplied by the Skillz SDK to ensure fairness across competition games.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (float)getRandomFloat</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The range of this function is [0, 1.0) (0 is inclusive, 1.0 is exclusive)</p>
+
+<p>Players in the same tournament will receive the same sequence of random numbers.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRandomNumberWithMin:andMax:" title="getRandomNumberWithMin:andMax:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRandomNumberWithMin:andMax:">+&nbsp;getRandomNumberWithMin:andMax:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a random unsigned integer supplied by the Skillz SDK to ensure fairness across competition games.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSUInteger)getRandomNumberWithMin:(NSUInteger)<em>min</em> andMax:(NSUInteger)<em>max</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>min</code></th>
+						<td><p>The minimum possible value returned, inclusive.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>max</code></th>
+						<td><p>The maximum possible value returned, exclusive.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number will be in the range [min,max) (min is inclusive, max is exclusive), and the probability will be evenly distributed
+amongst all the possible values.</p>
+
+<p>[Skillz skillzgetRandomNumberWithMin:2 andMax:10] will return one of the following numbers with equal probability:
+2,3,4,5,6,7,8,9</p>
+
+<p>Players in the same tournament will receive the same sequence of random numbers.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Skillz SDK Instance Methods" name="task_Skillz SDK Instance Methods"></a>
+						<h2 class="task-title">Skillz SDK Instance Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithDelegate:" title="initWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDelegate:">&ndash;&nbsp;initWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Initialize Skillz
+*</li>
+<li>This nmehtod eeds to be called within application:didFinishLaunchingWithOptions in your App Delegate.</li>
+<li>Calling this method does not launch the Skillz experience, it only configures the Skillz SDK for your game</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initWithDelegate:(id&lt;SkillzBaseDelegate&gt; _Nonnull)<em>delegate</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>Be sure that your app's Info.plist contains a "skillzSDK" dictionary with the correct configuration.
+
+Info.plist
+
+Info.plist Key      Type           Dictionary Key                 Type
+"skillzSDK"         Dictionary
+                                  "environment"                   String  ("sandbox" | "production")
+                                  "gameId"                        Number
+                                  "allowExit"                     Boolean
+                                  "orientation"  [optional]       String ("portrait | "landscape")
+</code></pre>
+
+<ul>
+<li>@param delegate         This delegate must implement all required methods of the <a href="../Protocols/SkillzBaseDelegate.html">SkillzBaseDelegate</a> protocol
+*</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithGameId:forDelegate:withEnvironment:allowExit:" title="initWithGameId:forDelegate:withEnvironment:allowExit:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithGameId:forDelegate:withEnvironment:allowExit:">&ndash;&nbsp;initWithGameId:forDelegate:withEnvironment:allowExit:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method needs to be called within application:didFinishLaunchingWithOptions in your App Delegate.
+Calling this method does not launch the Skillz experience, it only configures the Skillz SDK for your game</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initWithGameId:(NSString *_Nonnull)<em>gameId</em> forDelegate:(id&lt;SkillzBaseDelegate&gt; _Nonnull)<em>delegate</em> withEnvironment:(SkillzEnvironment)<em>environment</em> allowExit:(BOOL)<em>allowExit</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gameId</code></th>
+						<td><p>Your game ID as given to you on the Skillz developer portal</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>This delegate must implement all required methods of the <a href="../Protocols/SkillzBaseDelegate.html">SkillzBaseDelegate</a> protocol</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environment</code></th>
+						<td><p>SkillzSandbox for sandbox testing or SkillzProduction for app store submission.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowExit</code></th>
+						<td><p>Whether to allow the user to exit the Skillz experience</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/launchSkillz" title="launchSkillz"></a>
+	<h3 class="method-title"><code><a href="#//api/name/launchSkillz">&ndash;&nbsp;launchSkillz</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Launch the Skillz Experience</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)launchSkillz</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function is what will actually render the Skillz experience on screen. This function will draw a ViewController onto your
+view hierarchy.</p>
+
+<p>Because of this, do not call this method while attempting to draw another ViewController on screen as well.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMatchInfo" title="getMatchInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMatchInfo">&ndash;&nbsp;getMatchInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to fetch the match information of the current match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (SKZMatchInfo *_Nonnull)getMatchInfo</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <a href="../Classes/SKZMatchInfo.html">SKZMatchInfo</a> containing information identifying the match and players within the match.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatePlayersCurrentScore:" title="updatePlayersCurrentScore:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatePlayersCurrentScore:">&ndash;&nbsp;updatePlayersCurrentScore:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method must be called each time the current player&rsquo;s score changes during a Skillz match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updatePlayersCurrentScore:(NSNumber *_Nonnull)<em>currentScoreForPlayer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currentScoreForPlayer</code></th>
+						<td><p>Current score value for the <a href="#//api/name/player">player</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For example, in many games this method is called when the <a href="#//api/name/player">player</a> scores points, when the <a href="#//api/name/player">player</a> is penalized, and whenever a
+time bonus is applied. It is OK for this method to
+be called very often.</p>
+
+<p>If a continuous in-game score is displayed to the <a href="#//api/name/player">player</a>, this method is generally called as often as that score display is
+updated - usually by placing the updatePlayersCurrentScore call in the same place within the game loop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatePlayersCurrentScore:withMatchId:" title="updatePlayersCurrentScore:withMatchId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatePlayersCurrentScore:withMatchId:">&ndash;&nbsp;updatePlayersCurrentScore:withMatchId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method must be called each time the current player&rsquo;s score changes during a Skillz match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updatePlayersCurrentScore:(NSNumber *_Nonnull)<em>currentScoreForPlayer</em> withMatchId:(NSNumber *_Nonnull)<em>matchId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currentScoreForPlayer</code></th>
+						<td><p>Current score value for the <a href="#//api/name/player">player</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>matchId</code></th>
+						<td><p>Numeric value representing the current match&rsquo;s Id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For example, in many games this method is called when the <a href="#//api/name/player">player</a> scores points, when the <a href="#//api/name/player">player</a> is penalized, and whenever a
+time bonus is applied. It is OK for this method to
+be called very often.</p>
+
+<p>If a continuous in-game score is displayed to the <a href="#//api/name/player">player</a>, this method is generally called as often as that score display is
+updated - usually by placing the updatePlayersCurrentScore call in the same place within the game loop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/displayTournamentResultsWithScore:withCompletion:" title="displayTournamentResultsWithScore:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayTournamentResultsWithScore:withCompletion:">&ndash;&nbsp;displayTournamentResultsWithScore:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function to report the player&rsquo;s score to Skillz. Ends the current tournament, and returns the user to the Skillz
+experience.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)displayTournamentResultsWithScore:(NSNumber *_Nonnull)<em>score</em> withCompletion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>score</code></th>
+						<td><p>Numeric value representing the player&rsquo;s final score</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion will be called on wrap up so that the developer can finish any ongoing processes, such as
+saving game data or removing the game from the view hierarchy.</p>
+
+<p>Note: If your game is resource intensive, you should attempt to release as much memory as possible prior to calling this method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/displayTournamentResultsWithScore:withMatchId:withCompletion:" title="displayTournamentResultsWithScore:withMatchId:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayTournamentResultsWithScore:withMatchId:withCompletion:">&ndash;&nbsp;displayTournamentResultsWithScore:withMatchId:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function to report the player&rsquo;s score to Skillz. Ends the current tournament, and returns the user to the Skillz
+experience.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)displayTournamentResultsWithScore:(NSNumber *_Nonnull)<em>score</em> withMatchId:(NSNumber *_Nonnull)<em>matchId</em> withCompletion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>score</code></th>
+						<td><p>Numeric value representing the player&rsquo;s final score</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>matchId</code></th>
+						<td><p>Numeric value representing the current match&rsquo;s Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion will be called on wrap up so that the developer can finish any ongoing processes, such as
+saving game data or removing the game from the view hierarchy.</p>
+
+<p>Note: If your game is resource intensive, you should attempt to release as much memory as possible prior to calling this method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyPlayerAbortWithCompletion:" title="notifyPlayerAbortWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyPlayerAbortWithCompletion:">&ndash;&nbsp;notifyPlayerAbortWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function when a <a href="#//api/name/player">player</a> aborts a Skillz match in progress. Forfeits the match and brings the user back into the Skillz
+experience.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyPlayerAbortWithCompletion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion will be called on wrap up so that the developer can finish any ongoing processes, such as
+saving game data or removing the game from the view hierarchy.</p>
+
+<p>Note: If your game is resource intensive, you should attempt to release as much memory as possible prior to calling this method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyPlayerAbortWithMatchId:WithCompletion:" title="notifyPlayerAbortWithMatchId:WithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyPlayerAbortWithMatchId:WithCompletion:">&ndash;&nbsp;notifyPlayerAbortWithMatchId:WithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function when a <a href="#//api/name/player">player</a> aborts a Skillz match in progress. Forfeits the match and brings the user back into the Skillz
+experience.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyPlayerAbortWithMatchId:(NSNumber *_Nonnull)<em>matchId</em> WithCompletion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>matchId</code></th>
+						<td><p>Numeric value representing the current match&rsquo;s Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion will be called on wrap up so that the developer can finish any ongoing processes, such as
+saving game data or removing the game from the view hierarchy.</p>
+
+<p>Note: If your game is resource intensive, you should attempt to release as much memory as possible prior to calling this method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGameHasBackgroundMusic:" title="setGameHasBackgroundMusic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGameHasBackgroundMusic:">&ndash;&nbsp;setGameHasBackgroundMusic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If your game plays its own background music that you&rsquo;d like to play in the Skillz UI, set hasBackgroundMusic to YES to prevent
+the Skillz music from being played.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setGameHasBackgroundMusic:(BOOL)<em>hasBackgroundMusic</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hasBackgroundMusic</code></th>
+						<td><p>Whether or not your game uses background music.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gameCanReviewTurn" title="gameCanReviewTurn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gameCanReviewTurn">&ndash;&nbsp;gameCanReviewTurn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used internally to determine if a game has implemented the review turn feature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gameCanReviewTurn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+TurnBased.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Skillz SDK Information" name="task_Skillz SDK Information"></a>
+						<h2 class="task-title">Skillz SDK Information</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SDKShortVersion" title="SDKShortVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SDKShortVersion">+&nbsp;SDKShortVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the version of the Skillz SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *_Nonnull)SDKShortVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The SDK Version</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showSDKVersionInfo" title="showSDKVersionInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showSDKVersionInfo">+&nbsp;showSDKVersionInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Display the long version of SDK Info in a UIAlertView</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)showSDKVersionInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSkillzPresented" title="isSkillzPresented"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSkillzPresented">+&nbsp;isSkillzPresented</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will return a value confirming whether or not the Skillz UI is currently presented</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isSkillzPresented</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>True if Skillz UI is currently presented, otherwise false.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/skillzOrientation" title="skillzOrientation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skillzOrientation">+&nbsp;skillzOrientation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will return the UIInterfaceOrientationMask set for Skillz, typically this is only used by our UnityViewControllerBase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIInterfaceOrientationMask)skillzOrientation</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>UIInterfaceOrientationMask for Skillz</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/player" title="player"></a>
+	<h3 class="method-title"><code><a href="#//api/name/player">+&nbsp;player</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current logged in player. Use this method if you need this
+information outside of a tournament.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (SKZPlayer *_Nullable)player</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/SKZPlayer.html">SKZPlayer</a> object that represent the current player. If there is no
+player currently logged in, will return nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentUserDisplayName" title="currentUserDisplayName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentUserDisplayName">+&nbsp;currentUserDisplayName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>DEPRECATED: Use the <a href="#//api/name/player">player</a> method instead.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *_Nullable)currentUserDisplayName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithGameId:forDelegate:withEnvironment:" title="initWithGameId:forDelegate:withEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithGameId:forDelegate:withEnvironment:">&ndash;&nbsp;initWithGameId:forDelegate:withEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deprecated, use</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initWithGameId:(NSString *_Nonnull)<em>gameId</em> forDelegate:(id&lt;SkillzBaseDelegate&gt; _Nonnull)<em>delegate</em> withEnvironment:(SkillzEnvironment)<em>environment</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gameId</code></th>
+						<td><p>Skillz ID for your game</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Delegate responsible for handling Skillz protocol call backs</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>environment</code></th>
+						<td><p>Environment to point the SDK to (Production or Sandbox)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SkillzInstance.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="TurnBased Methods" name="task_TurnBased Methods"></a>
+						<h2 class="task-title">TurnBased Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/finishReviewingCurrentGameState:" title="finishReviewingCurrentGameState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/finishReviewingCurrentGameState:">&ndash;&nbsp;finishReviewingCurrentGameState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When your user has finished reviewing the current game state, use this method to return to the Skillz UI.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)finishReviewingCurrentGameState:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Called after Skillz UI has been displayed, use to clean up any outstanding objects in your game hierarchy.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+TurnBased.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/completeTurnWithGameData:playerScore:playerCurrentTotalScore:opponentCurrentTotalScore:roundOutcome:matchOutcome:withCompletion:" title="completeTurnWithGameData:playerScore:playerCurrentTotalScore:opponentCurrentTotalScore:roundOutcome:matchOutcome:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completeTurnWithGameData:playerScore:playerCurrentTotalScore:opponentCurrentTotalScore:roundOutcome:matchOutcome:withCompletion:">&ndash;&nbsp;completeTurnWithGameData:playerScore:playerCurrentTotalScore:opponentCurrentTotalScore:roundOutcome:matchOutcome:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Completes a turn for a game, giving you access to a full range of options to convey to Skillz the final outcome of the match. If a value does not pertain to your game, pass nil. You must track and update playerTotalScore and opponentTotalScore yourself each turn.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)completeTurnWithGameData:(NSString *_Nullable)<em>gameData</em> playerScore:(NSString *_Nullable)<em>score</em> playerCurrentTotalScore:(NSNumber *_Nullable)<em>playerCurrentTotalScore</em> opponentCurrentTotalScore:(NSNumber *_Nullable)<em>opponentCurrentTotalScore</em> roundOutcome:(SKZTurnBasedRoundOutcome)<em>turnOutcome</em> matchOutcome:(SKZTurnBasedMatchOutcome)<em>matchOutcome</em> withCompletion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gameData</code></th>
+						<td><p>A Base64 encoded NSString object containing serialized data which can be used to reconstruct the game state for the next   turn, or to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>score</code></th>
+						<td><p>The score the current user has obtained for <em>this</em> turn, this will be displayed in the Skillz UI, not used to calculate match outcomes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerCurrentTotalScore</code></th>
+						<td><p>The final score for the current <a href="#//api/name/player">player</a>, passing nil will not modify the current player&rsquo;s score. Also used in Skillz UI, not match outcomes</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>opponentCurrentTotalScore</code></th>
+						<td><p>The final score for the opponent <a href="#//api/name/player">player</a>, passing nil will not modify the opponent&rsquo;s score. Also used in Skillz UI, not match outcomes</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>turnOutcome</code></th>
+						<td><p>Passed to determine the outcome of a round. Round outcomes are used with in the Skillz UI. See <a href="../Constants/SKZTurnBasedRoundOutcome.html">SKZTurnBasedRoundOutcome</a> for more information.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>matchOutcome</code></th>
+						<td><p>Passed to determine the state of the match. Match outcomes determine the outcome of the match as whole, be it Win, Lose, or Tie. Pass &ldquo;kSKZMatchOutcomeMatchNoOutcome&rdquo; to continue play and pass control to opponent. See <a href="../Constants/SKZTurnBasedRoundOutcome.html">SKZTurnBasedRoundOutcome</a> for more information.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Called after Skillz UI has been displayed, use to clean up any outstanding objects in your game hierarchy.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+TurnBased.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="SyncPlay Methods" name="task_SyncPlay Methods"></a>
+						<h2 class="task-title">SyncPlay Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendData:" title="sendData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendData:">&ndash;&nbsp;sendData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method in order to send a message to all clients connected to this match.
+This will trigger <code>onDidReceiveData:</code> on all clients connected to the current match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendData:(NSData *_Nonnull)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to be sent.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: NSData passed to this function are limited to a certain size based on the game, and this function will assert if over that size. (2048 bytes currently)
+Please reach out to integrations@skillz.com for more information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMatchCompleted" title="isMatchCompleted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMatchCompleted">&ndash;&nbsp;isMatchCompleted</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will return whether or not another client connected to this match has called
+either <code>displaySynchronousTournamentResultsWithScore</code> or <code>initiateSynchronousAbortWithCompletion:</code>
+to end the match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMatchCompleted</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Whether or not the match has been completed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getConnectedPlayerCount" title="getConnectedPlayerCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getConnectedPlayerCount">&ndash;&nbsp;getConnectedPlayerCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to query the number of players currently connected to a match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)getConnectedPlayerCount</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The numbers of players connected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrentPlayerId" title="getCurrentPlayerId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrentPlayerId">&ndash;&nbsp;getCurrentPlayerId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will return the current user&rsquo;s <a href="#//api/name/player">player</a> ID for an in progress match.
+You can use this to easily fetch the current SKZSyncPlayer, or for use in variable passing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (SKZSyncPlayerId)getCurrentPlayerId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Integer identifying the current user in the match.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrentOpponentPlayerId" title="getCurrentOpponentPlayerId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrentOpponentPlayerId">&ndash;&nbsp;getCurrentOpponentPlayerId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This will return the current user&rsquo;s opponent <a href="#//api/name/player">player</a> ID for an in progress match.
+You can use this to easily fetch the current SKZSyncPlayer, or for use in variable passing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (SKZSyncPlayerId)getCurrentOpponentPlayerId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Integer identifying the current user in the match.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServerTime" title="getServerTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServerTime">&ndash;&nbsp;getServerTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Will return the current server time so that you may synchronize via that rather than local device time.
+Note: Do not use this to display a time and date.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (double)getServerTime</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Current time in seconds</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTimeLeftForReconnection:" title="getTimeLeftForReconnection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTimeLeftForReconnection:">&ndash;&nbsp;getTimeLeftForReconnection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A <a href="#//api/name/player">player</a> only has this much time remaining to reconnect once disconnected. This is the actual time they have left when this method is called.
+Note: If the value returned is negative, the <a href="#//api/name/player">player</a> should be considered aborted from the match.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (uint64_t)getTimeLeftForReconnection:(SKZSyncPlayerId)<em>playerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>The</code></th>
+						<td><p><a href="#//api/name/player">player</a> id of the disconnected <a href="#//api/name/player">player</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Current time in milliseconds</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Analytics Methods" name="task_Analytics Methods"></a>
+						<h2 class="task-title">Analytics Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addMetadata:forMatchInProgress:" title="addMetadata:forMatchInProgress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMetadata:forMatchInProgress:">&ndash;&nbsp;addMetadata:forMatchInProgress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You may use this method to track <a href="#//api/name/player">player</a> actions, level types, or other information pertinent to your Skillz integration.
+There should be no more than 10 Key Value pairs in the supplied attributes dictionary, excess values will be trimmed.
+Collected data will only be available to Skillz and will help Skillz identify fairness in level based games.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addMetadata:(nonnull NSDictionary *)<em>attributes</em> forMatchInProgress:(BOOL)<em>forMatchInProgress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>Values to be recorded. Keys and values must be strings. Keys must be less than 50 characters, values must be less than 200 characters.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>forMatchInProgress</code></th>
+						<td><p>If this relates to an in progress match additional match info will be tracked with these attributes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+Analytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Skillz. All rights reserved. Updated: 2019-05-23</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@
 
 import SpriteKit
 import TWSpriteKitUtils
+import Skillz
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var updateTimer = UpdateTimer()
@@ -306,7 +307,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if gameEndedDoOnce == false {
             gameEndedDoOnce = true
             AppPersistence.newPlayedMatch()
-            removeUIandPresentScene(InitialScene(score: scoreBoard.getScore()))
+            if (Skillz.skillzInstance().tournamentIsInProgress) {
+                Skillz.skillzInstance().displayTournamentResults(withScore: scoreBoard.getScore().points as NSNumber) {
+                    print("endGame: tournamentIsInProgress: TRUE : displayTournamentResults")
+                }
+            } else {
+                Skillz.skillzInstance().displayTournamentResults(withScore: scoreBoard.getScore().points as NSNumber) {
+                    print("endGame: tournamentIsInProgress: FALSE : displayTournamentResults")
+                }
+            }
+//            removeUIandPresentScene(InitialScene(score: scoreBoard.getScore()))
         }
     }
 

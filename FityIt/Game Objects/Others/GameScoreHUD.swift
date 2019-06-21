@@ -8,6 +8,7 @@
 
 
 import SpriteKit
+import Skillz
 
 class GameScoreHUD: SKLabelNode {
     private(set) var points: Int = 0 {
@@ -32,6 +33,7 @@ class GameScoreHUD: SKLabelNode {
     
     func add1Point() {
         points = points + 1
+        Skillz.skillzInstance().updatePlayersCurrentScore(NSNumber(value: points))
         run(.appearAnimated(self, time: delay * 0.6))
     }
     

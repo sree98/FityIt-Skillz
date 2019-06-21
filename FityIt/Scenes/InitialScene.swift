@@ -73,19 +73,13 @@ class InitialScene: SKScene {
         let deviceSize = (isiPad ? iPadSize : iPhoneSize)
         let margin = SKSpriteNode(color: .clear, size: deviceSize)
         
-        let circlesStack = TWStackNode(size: deviceSize, fillMode: .horizontal)
-        circlesStack.add(node: playButton)
-        circlesStack.add(node: shareButton)
-        circlesStack.reloadStack()
-        
         let squaresStack = TWStackNode(size: deviceSize, fillMode: .horizontal)
-        squaresStack.add(node: leaderboardButton)
         squaresStack.add(node: soundButton)
         squaresStack.add(node: rateButton)
         squaresStack.reloadStack()
         
         let bottomStack = TWStackNode(lenght: deviceSize.width, fillMode: .vertical)
-        bottomStack.add(node: circlesStack)
+        bottomStack.add(node: playButton)
         bottomStack.add(node: margin)
         bottomStack.add(node: squaresStack)
         bottomStack.add(node: margin.copy() as! SKNode)
@@ -107,14 +101,8 @@ class InitialScene: SKScene {
         topStack.position.y += newSize.height/4 - multiplier/2
         topStack.zPosition = 400
         topStack.add(node: bannerLogo)
-        topStack.add(node: scoreContainer)
         topStack.reloadStack()
         addChild(topStack)
-        
-        tutorialButton.position = CGPoint(x: newSize.width - tutorialButton.size.width/2, y: newSize.height - tutorialButton.size.height/2)
-        tutorialButton.zPosition = 500
-        tutorialButton.alpha = 0
-        addChild(tutorialButton)
         
         let track = SKSpriteNode(color: .white, size: CGSize(width: newSize.width + 10, height: multiplier))
         track.position = CGPoint(x: newSize.width/2, y: newSize.height/2)
@@ -194,8 +182,7 @@ class InitialScene: SKScene {
                           highlightedTexture: AppCache.instance.interfaceAtlas.textureNamed("bt_play_h"))
         
         bt.addClosure(.touchUpInside, target: self, closure: { (currentScene, sender) -> () in
-            let scene = currentScene.gameScene ?? GameScene()
-            currentScene.removeUIandPresentScene(scene)
+            Skillz.skillzInstance().launch()
         })
         return bt
     }()

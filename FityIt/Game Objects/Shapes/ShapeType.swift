@@ -19,8 +19,9 @@ enum ShapeType {
     static var lastRandomShapeIndex: Int = 0
     static func randomShape() -> Shape {
         var i = 0
+        let max = allCases.count-1
         repeat {
-            i = Int.random(allCases.count)
+            i = Int(Skillz.getRandomNumber(withMin: 0, andMax: UInt(max)))
         } while i == lastRandomShapeIndex
         
         lastRandomShapeIndex = i

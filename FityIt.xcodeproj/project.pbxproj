@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EDC6FF222BAEDB100BCE254 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC6FF122BAEDB100BCE254 /* Skillz.framework */; };
+		1EDC6FF322BAEDF600BCE254 /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC6FF122BAEDB100BCE254 /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EEC1A6F22BC573200C120A6 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEC1A6E22BC573200C120A6 /* AuthenticationServices.framework */; };
 		3325AF002059DE40008E1174 /* SKAction+AppearDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AEFF2059DE40008E1174 /* SKAction+AppearDisappear.swift */; };
 		3325AF1D205B02E6008E1174 /* ShareImageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF1B205B02E6008E1174 /* ShareImageScene.swift */; };
 		3325AF1F205B0393008E1174 /* UIView+AsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325AF1E205B0393008E1174 /* UIView+AsImage.swift */; };
@@ -113,6 +116,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1EDC6FF322BAEDF600BCE254 /* Skillz.framework in Embed Frameworks */,
 				33AD4FC120B304C50034A9BA /* TWSpriteKitUtils.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -121,6 +125,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EBAF5B022BC0ED400E7CE36 /* FityIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FityIt.entitlements; sourceTree = "<group>"; };
+		1EDC6FF122BAEDB100BCE254 /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Skillz.framework; path = sdk_ios_22.0.12_10.0.25/Skillz.framework; sourceTree = SOURCE_ROOT; };
+		1EEC1A6E22BC573200C120A6 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		3325AEFF2059DE40008E1174 /* SKAction+AppearDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKAction+AppearDisappear.swift"; sourceTree = "<group>"; };
 		3325AF1B205B02E6008E1174 /* ShareImageScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareImageScene.swift; sourceTree = "<group>"; };
 		3325AF1E205B0393008E1174 /* UIView+AsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AsImage.swift"; sourceTree = "<group>"; };
@@ -208,6 +215,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEC1A6F22BC573200C120A6 /* AuthenticationServices.framework in Frameworks */,
+				1EDC6FF222BAEDB100BCE254 /* Skillz.framework in Frameworks */,
 				33AD4FC020B304C50034A9BA /* TWSpriteKitUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +224,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EEC1A6D22BC573200C120A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EEC1A6E22BC573200C120A6 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3325AF24205B079C008E1174 /* LPRFixedWidthLabelNode */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +294,7 @@
 				33ECD8D720584B3300B6AE8E /* FityIt */,
 				33BC56EF205DD5430022728D /* FityIt-Screenshots */,
 				33ECD8D620584B3300B6AE8E /* Products */,
+				1EEC1A6D22BC573200C120A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,6 +310,7 @@
 		33ECD8D720584B3300B6AE8E /* FityIt */ = {
 			isa = PBXGroup;
 			children = (
+				1EBAF5B022BC0ED400E7CE36 /* FityIt.entitlements */,
 				33ECD9902059972F00B6AE8E /* Controllers */,
 				33ECD96F205869CB00B6AE8E /* Utilities */,
 				33ECD96620585CD100B6AE8E /* Main */,
@@ -307,6 +326,7 @@
 		33ECD9202058527500B6AE8E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1EDC6FF122BAEDB100BCE254 /* Skillz.framework */,
 				33ECD98A205986C300B6AE8E /* Images.xcassets */,
 				33ECD988205983E600B6AE8E /* LaunchScreen.storyboard */,
 				33ECD9852059834800B6AE8E /* Localizable.strings */,
@@ -490,6 +510,7 @@
 				33ECD8D220584B3300B6AE8E /* Frameworks */,
 				33ECD8D320584B3300B6AE8E /* Resources */,
 				3325AEE52059DB2E008E1174 /* Embed Frameworks */,
+				1E1990A222BACE0A00CE43F1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -509,7 +530,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Txai Wieser";
+				ORGANIZATIONNAME = Sree;
 				TargetAttributes = {
 					33BC56ED205DD5430022728D = {
 						CreatedOnToolsVersion = 9.3;
@@ -519,6 +540,17 @@
 					33ECD8D420584B3300B6AE8E = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -594,6 +626,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E1990A222BACE0A00CE43F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -e \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skillz.framework/postprocess.sh\" ]; then\n/bin/sh \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skillz.framework/postprocess.sh\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33BC56EA205DD5430022728D /* Sources */ = {
@@ -850,16 +902,25 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 99MCMQ6KGP;
+				CODE_SIGN_ENTITLEMENTS = FityIt/FityIt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8VM75V3Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdk_ios_22.0.12_10.0.25",
+					"$(PROJECT_DIR)/sdk_ios_21.0.25_9.0.42",
+				);
 				INFOPLIST_FILE = FityIt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TDW.FityIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skillz.examples.spritybird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FityIt/Supporting Files/FityIt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -873,17 +934,25 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 99MCMQ6KGP;
+				CODE_SIGN_ENTITLEMENTS = FityIt/FityIt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8VM75V3Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdk_ios_22.0.12_10.0.25",
+					"$(PROJECT_DIR)/sdk_ios_21.0.25_9.0.42",
+				);
 				INFOPLIST_FILE = FityIt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TDW.FityIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skillz.examples.spritybird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FityIt/Supporting Files/FityIt-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

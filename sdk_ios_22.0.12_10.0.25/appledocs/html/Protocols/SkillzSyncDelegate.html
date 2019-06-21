@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SkillzSyncDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SkillzSDK-iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Skillz</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/onCurrentPlayerHasLeftMatch">- onCurrentPlayerHasLeftMatch</option>
+		
+		<option value="//api/name/onCurrentPlayerHasLostConnection">- onCurrentPlayerHasLostConnection</option>
+		
+		<option value="//api/name/onCurrentPlayerHasReconnected">- onCurrentPlayerHasReconnected</option>
+		
+		<option value="//api/name/onDidReceiveData:">- onDidReceiveData:</option>
+		
+		<option value="//api/name/onMatchCompleted">- onMatchCompleted</option>
+		
+		<option value="//api/name/onOpponentHasLeftMatch:">- onOpponentHasLeftMatch:</option>
+		
+		<option value="//api/name/onOpponentHasLostConnection:">- onOpponentHasLostConnection:</option>
+		
+		<option value="//api/name/onOpponentHasReconnected:">- onOpponentHasReconnected:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SkillzSyncDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>Skillz+SyncPlay.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The object you pass into the delegate argument of initWithGameId:forDelegate:withEnvironment:allowExit: should conform to this protocol.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="User Connection Management" name="task_User Connection Management"></a>
+						
+<h2 class="task-title">User Connection Management</h2>
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onOpponentHasReconnected:" title="onOpponentHasReconnected:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onOpponentHasReconnected:">&ndash;&nbsp;onOpponentHasReconnected:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called when the opponent player has successfully reconnected within the timeout.
+This will allow you to resume the game.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onOpponentHasReconnected:(SKZSyncPlayerId)<em>playerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerId</code></th>
+						<td><p>Id of player who has reconnected</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onOpponentHasLostConnection:" title="onOpponentHasLostConnection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onOpponentHasLostConnection:">&ndash;&nbsp;onOpponentHasLostConnection:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called when the opponent player&rsquo;s connection has failed and <a href="../Classes/Skillz.html">Skillz</a> is attempting to reconnect
+This will allow you to pause the game while waiting for the player to reconnect.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onOpponentHasLostConnection:(SKZSyncPlayerId)<em>playerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerId</code></th>
+						<td><p>Id of player who is attempting to reconnect</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onOpponentHasLeftMatch:" title="onOpponentHasLeftMatch:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onOpponentHasLeftMatch:">&ndash;&nbsp;onOpponentHasLeftMatch:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called when the opponent player leaves the match (due to connection failure or abort) and is unable to rejoin. At this point, <a href="../Classes/Skillz.html">Skillz</a> handles the player as if they have aborted.
+At this point your game should gracefully end the match and report the current player&rsquo;s score.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onOpponentHasLeftMatch:(SKZSyncPlayerId)<em>playerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerId</code></th>
+						<td><p>Id of player who has permanently left the match</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: If you receive this message without a corresponding &ldquo;onOpponentHasLostConnection:&rdquo; call, you should assume the player has manually aborted.</p>
+
+<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onCurrentPlayerHasReconnected" title="onCurrentPlayerHasReconnected"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onCurrentPlayerHasReconnected">&ndash;&nbsp;onCurrentPlayerHasReconnected</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called when the current player has successfully reconnected within the timeout.
+This will allow you to resume the game.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onCurrentPlayerHasReconnected</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onCurrentPlayerHasLostConnection" title="onCurrentPlayerHasLostConnection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onCurrentPlayerHasLostConnection">&ndash;&nbsp;onCurrentPlayerHasLostConnection</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called when the current player&rsquo;s connection has failed and <a href="../Classes/Skillz.html">Skillz</a> is attempting to reconnect
+This will allow you to pause the game while waiting for the player to reconnect.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onCurrentPlayerHasLostConnection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onCurrentPlayerHasLeftMatch" title="onCurrentPlayerHasLeftMatch"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onCurrentPlayerHasLeftMatch">&ndash;&nbsp;onCurrentPlayerHasLeftMatch</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called when the current player leaves the match (due to connection failure or abort) and is unable to rejoin. At this point, <a href="../Classes/Skillz.html">Skillz</a> handles the player as if they have aborted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onCurrentPlayerHasLeftMatch</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: You should follow up by calling &ldquo;notifyPlayerAbortWithCompletion:&rdquo; at your convenience.</p>
+
+<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onDidReceiveData:" title="onDidReceiveData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onDidReceiveData:">&ndash;&nbsp;onDidReceiveData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When another instance of your client connected to the same match passes a message using the below <code>sendData:</code>, this method will be called on all other clients.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onDidReceiveData:(NSData *_Nonnull)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The message sent by your client</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onMatchCompleted" title="onMatchCompleted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onMatchCompleted">&ndash;&nbsp;onMatchCompleted</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be triggered on all clients when one client has explicitly reported a score or aborted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onMatchCompleted</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: This method will be called from a background thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Skillz+SyncPlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Skillz. All rights reserved. Updated: 2019-05-23</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
