@@ -4,10 +4,10 @@
 
 <h1 align="center">FityIt - The shapes game</h1>
 
+<!---
 <p align="center">
 <a href="https://itunes.apple.com/us/app/fityit-the-shapes-game/id991444581?mt=8"><img src="readme-resources/app_store_badge.svg" alt="Download on the App Store"/></a>
 </p>
-
 <p align="center">
 <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat" alt="Swift"/></a>
 
@@ -16,6 +16,7 @@
 <br>
 <a href="http://twitter.com/txaiwieser"><img src="https://img.shields.io/badge/Twitter-@txaiwieser-blue.svg?style=flat" alt="Twitter"/></a>
 </p>
+--->
 
 <p align="center">
   <img height="300" src="readme-resources/fityIt_showcase.gif">
