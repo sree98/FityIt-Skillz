@@ -182,7 +182,7 @@ class InitialScene: SKScene {
                           highlightedTexture: AppCache.instance.interfaceAtlas.textureNamed("bt_play_h"))
         
         bt.addClosure(.touchUpInside, target: self, closure: { (currentScene, sender) -> () in
-            Skillz.skillzInstance().launch()
+            Skillz.skillzInstance().skillzinstanc()
         })
         return bt
     }()
